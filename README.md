@@ -1,14 +1,26 @@
 # Password Strength Checker
 
-Aplikasi untuk memeriksa kekuatan password menggunakan zxcvbn.
+Aplikasi untuk memeriksa kekuatan password menggunakan library `zxcvbn`. Mendukung antarmuka baris perintah (CLI) dan antarmuka grafis (GUI) dengan Tkinter.
 
-## Cara Penggunaan
-1. Aktifkan virtual environment: `source venv/bin/activate`
-2. Jalankan aplikasi: `python checker.py`
-3. Masukkan password di kolom input, klik "Cek Kekuatan".
-4. Lihat skor (0-4) dan estimasi waktu cracking.
+## Tujuan
+Aplikasi ini membantu pengguna mengevaluasi kekuatan password berdasarkan skor (0-4) dan estimasi waktu cracking, untuk meningkatkan kesadaran keamanan password.
 
-## Dependensi
+## Fitur
+- Memeriksa kekuatan password menggunakan `zxcvbn`.
+- Menampilkan skor (0-4) dan estimasi waktu cracking.
+- Antarmuka CLI untuk penggunaan sederhana.
+- (Opsional) Antarmuka GUI dengan Tkinter untuk pengalaman interaktif.
+
+## Prasyarat
 - Python 3.11
-- zxcvbn
-- Tkinter
+- Library Python: `zxcvbn`, `bandit`
+- Tkinter (`python3-tk`) untuk GUI
+- Git untuk version control
+- (Opsional) Draw.io untuk flowchart
+- (Opsional) John the Ripper untuk simulasi cracking
+
+## Instalasi
+1. Clone repositori:
+   ```bash
+   git clone git@github.com:MartinStwn/password-strength-checker.git
+   cd password_strength_checker
